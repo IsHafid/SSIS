@@ -1,0 +1,54 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Gestionnaire de connexions de fichiers plats"
+  DTS:DTSID="{B74EAB4B-91E4-4FC6-8575-A08529AE19DE}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="C:\Users\DELL\Downloads\SampleCurrencyData.txt">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x0009_"
+          DTS:MaximumWidth="11"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="AverageRate"
+          DTS:DTSID="{232BCA03-A152-447A-9D35-D1ED42DC554A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x0009_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CurrencyID"
+          DTS:DTSID="{346A5590-7FC6-41EE-86B2-28B7551EDBA7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x0009_"
+          DTS:DataType="133"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CurrencyDate"
+          DTS:DTSID="{1C5FD5B3-B0C4-44EF-ADB5-016B5AF43F7C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:MaximumWidth="11"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="EndOfDayRate"
+          DTS:DTSID="{C33267C8-543B-4B11-BABD-5D49A171F1A3}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
